@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script type='text/jscript'>
+      var req=null;
+      var console=null;
+      var READY_STATE_UNINTIALIZED=0;
+      var READY_STATE_LOADING=1;
+      var READY_STATE_LOADED=2;
+      var READY_STATE_INTERACTIVE=3;
+      var READY_STATE_COMPLETE=4;
+      
+      function sendRequest(url,params,HttpMethod) {
+        alert(HttpMethod);
+        if (!HttpMethod) {
+          HttpMethod="GET";
+          alert(HttpMethod);
+        }
+        
+      
+      }
+      
+      window.onload=function(){
+        console=document.getElementById('console');
+        alert(console);
+        sendRequest("data.txt");
+      }
+    </script>  
+  </head>
+  <body>
+    Ajax Test 2.5.5
+    <div id='console'></div>
+  </body>
+</html>
+	  	
